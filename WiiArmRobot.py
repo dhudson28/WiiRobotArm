@@ -50,8 +50,8 @@ while True:
 	speed_roll = abs(wii.state['acc'][0] - 128) * 2
 	buttonValue = wii.state['buttons']
 	
-	#print(roll)
-	#pdb.set_trace()	
+	#pdb.set_trace() #this enables the Debugger
+	
 	try:	#this code below is for the arm up and down based on the tild of the remote
 		if(tilt > 135):#This will make the motor go forwards
 			gpio.output(13, True)#when the controller is up
